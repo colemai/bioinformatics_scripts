@@ -87,7 +87,7 @@ def run_jellyfish(input_fn, kmer_size=15):
     kmer_size: int, size of k-mers used by jellyfish
     """
     out_fn = 'tomato{}'.format(kmer_size)
-    cmd = 'jellyphish count -m {} -s 1000000 -o {} {}'\
+    cmd = 'jellyfish count -m {} -s 1000000 -o {} {}'\
         .format(kmer_size, out_fn, input_fn)
     e = subprocess.check_output(cmd, shell=True)
     if os.path.exists(out_fn):
