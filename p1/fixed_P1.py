@@ -93,7 +93,7 @@ def run_jellyfish(input_fn, kmer_size=15):
     if os.path.exists(out_fn):
         cmd = 'jellyfish stats {}'.format(out_fn)
     else:
-        cmd = 'jellyfish stats {}_0'.format(out_fn)
+        cmd = 'jellyfish stats {}'.format(out_fn)
     res = subprocess.check_call(cmd, shell=True)
     return res
 
