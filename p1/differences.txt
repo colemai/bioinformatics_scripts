@@ -1,0 +1,43 @@
+7,9d6
+< 
+< Name: Ian Coleman
+< Student Number: 910616160090
+16,17d12
+< # import code; code.interact(local=dict(globals(), **locals()))
+< 
+25c20
+<         if not line.strip():
+---
+>         if not line.stripit():
+28c23
+<             label = line.strip()
+---
+>             label = line.strip()[1:]
+31c26
+<             seqs[label] += line.strip()
+---
+>             seqs[label] += line.strip()[1:]
+45c40
+<     for label, seq in seqs.items():
+---
+>     for label, seq in seqs.items()
+50c45
+<         for i in range(len(seq)-kmer_size + 1):
+---
+>         for i in range(len(seq)-kmer_size):
+79c74
+<             print(k, v)
+---
+>         print(k, v)
+90c85
+<     cmd = 'jellyfish count -m {} -s 1000000 -o {} {}'\
+---
+>     cmd = 'jellyphish count -m {} -s 1000000 -o {} {}'\
+107c102
+<     kmers = extract_kmers(dna_seqs, skip_unknown=True, k=15)
+---
+>     kmers = extract_kmers(dna_seqs, skip_unknown=True, k=14)
+112c107
+<     print(str(jelly_out))
+---
+>     print(str(jelly_out,'utf-8'))
