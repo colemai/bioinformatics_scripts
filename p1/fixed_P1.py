@@ -25,10 +25,10 @@ def parse_fasta(lines):
         if not line.strip():
             continue
         if line.startswith('>'):
-            label = line.strip()[1:]
+            label = line.strip()
             seqs[label] = ""
         else:
-            seqs[label] += line.strip()[1:]
+            seqs[label] += line.strip()
     return seqs
 
 def extract_kmers(seqs, k=15, skip_unknown=True):
@@ -47,7 +47,7 @@ def extract_kmers(seqs, k=15, skip_unknown=True):
             if c not in ch:
                 ch[c] = 0
             ch[c] += 1
-        for i in range(len(seq)-kmer_size):
+        for i in range(len(seq)-kmer_size + 1):
             kmer = seq[i:i+kmer_size]
             count = True
             for c in kmer:
@@ -104,10 +104,10 @@ if __name__ == "__main__":
     dna_seqs = parse_fasta(open(inp_fn))
     # extract k-mers of length 15 and print the results
     kmer_len = 15
-    kmers = extract_kmers(dna_seqs, skip_unknown=True, k=14)
+    kmers = extract_kmers(dna_seqs, skip_unknown=True, k=15)
     print_stats(kmers)
     # run the tool jellyfish and print the results 
     jelly_out = run_jellyfish(inp_fn, kmer_size=kmer_len)
     print("JELLYFISH OUTPUT")
-    print(str(jelly_out,'utf-8'))
+    print(str(jelly_out))
 
