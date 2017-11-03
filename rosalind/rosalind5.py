@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""
+author: Ian Coleman
+purpose: output label and gc content of seq with highest gc content of seqs in a fasta file
+"""
 
 from sys import argv
-fasta = ''
 
 def parse_fasta (input_filename):
     #Converts fasta file into a dictionary. Input of fasta file.
@@ -19,10 +22,14 @@ def parse_fasta (input_filename):
 def gc_content_fasta (input_fasta):
     #iterate thru fasta dict, add each key to new_dict, calculate \
     #each val'sgc content % and make this the val in new_dict
-    output_dict = {}
+    output_list = [0, 0]
     for key, value in input_fasta.items():
-        output_dict[key] = 0
-        print(value)
+        #calculate gc content of strings here
+        
+        if value > output_list[1]:
+            output_list[0] = key
+            output_list[1] = value
+    #this seems unnecessarily heavy computationally. Better to ? organise
         
 
 #if __name__ == "__main__":
