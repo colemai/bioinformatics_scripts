@@ -11,6 +11,7 @@ def parse_fasta (input_filename):
     with open(input_filename, 'r') as file_object:
         file_list = file_object.readlines()
         fasta_dict = {}
+        #iterate through each line, add label as key and sequence as value
         for i in range(0, len(file_list)):
             if file_list[i].startswith('>'):
                 label_index = file_list[i].strip()
@@ -20,23 +21,25 @@ def parse_fasta (input_filename):
         return fasta_dict
     
 def gc_content_fasta (input_fasta):
-    #iterate thru fasta dict, add each key to new_dict, calculate \
-    #each val'sgc content % and make this the val in new_dict
+    #Take input of fasta dict, output the label and gc % of seq with highest gc %
     output_list = [0, 0]
-    for key, value in input_fasta.items():
-        #calculate gc content of strings here
+    for label, sequence in input_fasta.items():
+        #calculate gc content % of this sequence
+        gc_proportion = (sequence.count('C') + sequence.count('G'))/len(sequence) * 100
         
-        if value > output_list[1]:
-            output_list[0] = key
-            output_list[1] = value
-    #this seems unnecessarily heavy computationally. Better to ? organise
-        
+        #if this gc content is the highest yet, make it the new output 
+        if gc_proportion > output_list[1]:
+            output_list[0] = label
+            output_list[1] = gc_proportion
+        #this last part seems unnecessarily heavy computationally. Better to sort?
+    print (output_list[0][1:])
+    print (output_list[1])
 
-#if __name__ == "__main__":
 
-
-fasta_dict = parse_fasta(argv[1])
-gc_content_fasta(fasta_dict)
+if __name__ == "__main__":
+    #run the methods
+    fasta_dict = parse_fasta(argv[1])
+    gc_content_fasta(fasta_dict)
 
 
 
