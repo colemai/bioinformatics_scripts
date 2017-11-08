@@ -9,6 +9,15 @@ from sys import argv
 def translate_rna_to_dna (rna_seq):
 	with open(rna_seq, 'r') as input_seq:
 		input_seq = input_seq.readlines()[0]
+
+		codon_to_nt = {
+		
+
+
+		}
+
+		for i in range(0, len(input_seq)):
+
 		
 
 translate_rna_to_dna(argv[1])
