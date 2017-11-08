@@ -1,0 +1,23 @@
+total 276
+drwxrwxr-x 2 ian ian   4096 nov  8 09:46 .
+drwxrwxr-x 6 ian ian   4096 nov  6 10:57 ..
+-rw-rw-r-- 1 ian ian 149852 nov  8 08:30 EN belastingpagina.pdf
+-rw-rw-r-- 1 ian ian    565 nov  3 13:39 ian_bif_utilities.py
+-rw-rw-r-- 1 ian ian    301 nov  6 22:49 more-sample-fast.txt
+-rw-rw-r-- 1 ian ian      0 nov  8 09:46 out.txt
+-rw-rw-r-- 1 ian ian     51 nov  8 08:56 rna_sample.txt
+-rw-rw-r-- 1 ian ian    415 nov  1 20:23 rosalind1.py
+-rw-rw-r-- 1 ian ian    349 nov  1 20:45 rosalind2.py
+-rw-rw-r-- 1 ian ian    195 nov  1 21:15 rosalind3.py
+-rw-rw-r-- 1 ian ian    420 nov  1 21:35 rosalind4.py
+-rw-rw-r-- 1 ian ian   1557 nov  6 22:52 rosalind5.py
+-rw-rw-r-- 1 ian ian   1146 nov  7 21:07 rosalind6.py
+-rw-rw-r-- 1 ian ian    257 nov  8 08:58 rosalind7.py
+-rw-rw-r-- 1 ian ian    860 nov  1 20:38 rosalind_dna.txt
+-rw-rw-r-- 1 ian ian   9457 nov  6 22:50 rosalind_gc (1).txt
+-rw-rw-r-- 1 ian ian   9283 nov  7 21:12 rosalind_gc (2).txt
+-rw-rw-r-- 1 ian ian   7698 nov  7 21:14 rosalind_gc.txt
+-rw-rw-r-- 1 ian ian   1810 nov  7 21:07 rosalind_hamm.txt
+-rw-rw-r-- 1 ian ian   1868 nov  7 21:16 rosalind_hams.txt
+-rw-rw-r-- 1 ian ian    871 nov  6 08:54 samle_fasta_dna.txt
+-rw-rw-r-- 1 ian ian     35 nov  7 20:51 sample_r6.txt
