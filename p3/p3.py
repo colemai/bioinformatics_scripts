@@ -79,10 +79,20 @@ def mean_quals(listed_fastq, length_stats):
 		mean_qual_list.append(sum(qual_at_position)/len(qual_at_position))
 	print (mean_qual_list)
 
-if __name__ == "__main__":
+def process_fastq_to_list(fastq):
+	#Takes a fastq and outputs a list of dicrionaries with all contained info
 	fastq_lines = intake_fastq(argv[1])
 	fastq_lines_2 = record_finder_2(fastq_lines)
 	listed_fastq = make_list(fastq_lines_2)
 	listed_fastq_2 = get_quals(listed_fastq)
-	length_stats = get_lengths(listed_fastq_2)
-	mean_quality_list = mean_quals(listed_fastq_2, length_stats)
+	return listed_fastq_2
+
+
+if __name__ == "__main__":
+	fastq_original = process_fastq_to_list(argv[1])
+	fastq_trimmed = process_fastq_to_list(argv[2])
+
+
+	length_stats = get_lengths(fastq_original)
+	mean_quality_list_original = mean_quals(fastq_original, length_stats)
+	mean_quality_list_trimmed = mean_quals(fastq_original, length_stats)
