@@ -5,6 +5,7 @@ Purpose:
 """
 
 from sys import argv
+import subprocess
 
 def intake_fastq (input_file):
     """Yield lines from a single record of file (fastq format)
@@ -81,7 +82,7 @@ def mean_quals(listed_fastq, length_stats):
 
 def process_fastq_to_list(fastq):
 	#Takes a fastq and outputs a list of dicrionaries with all contained info
-	fastq_lines = intake_fastq(argv[1])
+	fastq_lines = intake_fastq(fastq)
 	fastq_lines_2 = record_finder_2(fastq_lines)
 	listed_fastq = make_list(fastq_lines_2)
 	listed_fastq_2 = get_quals(listed_fastq)
@@ -92,7 +93,10 @@ if __name__ == "__main__":
 	fastq_original = process_fastq_to_list(argv[1])
 	fastq_trimmed = process_fastq_to_list(argv[2])
 
-
 	length_stats = get_lengths(fastq_original)
+	length_stats_2 = get_lengths(fastq_trimmed)
+
+	subprocess.call("ls", shell=True)
 	mean_quality_list_original = mean_quals(fastq_original, length_stats)
-	mean_quality_list_trimmed = mean_quals(fastq_original, length_stats)
+	exit()
+	mean_quality_list_trimmed = mean_quals(fastq_trimmed, length_stats_2)
