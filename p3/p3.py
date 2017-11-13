@@ -73,9 +73,9 @@ def get_lengths(listed_fastq):
 
 def mean_quals(listed_fastq, length_stats):
 	mean_qual_list = []
-	for index in range(0,length_stats['max']):
+	for entry in listed_fastq:
 		qual_at_position = []
-		for entry in listed_fastq:
+		for index in range(0,len(entry)):
 			qual_at_position.append(entry['quality_int'][index])
 		mean_qual_list.append(sum(qual_at_position)/len(qual_at_position))
 	print (mean_qual_list)
