@@ -41,7 +41,7 @@ def prep_seqs(fasta_input):
 	return seqs_with_length
 
 def call_needle(ref_seq, other_seq, gap_open = 8, gap_extend = 0.5, out_file = 'out.needle'):
-    cmd = 'needle -asequence {} -bsequence {} gapopen {} -gapextend {} -outfile'\
+    cmd = 'needle {} {} gapopen {} -gapextend {} -outfile {}'\
     .format(ref_seq, other_seq, gap_open, gap_extend, out_file)
     err = subprocess.check_output(cmd, shell=True)
     result = subprocess.check_call(cmd, shell=True)
@@ -55,7 +55,8 @@ def pairwise_align(ref_seq, seqs):
 	for sequence in seqs:
 		reference = ref_seq[1]['Sequence']
 		current_sequence = sequence['Sequence']
-		# call_needle(reference, )
+		
+		call_needle(reference, current_sequence)
 
 if __name__ == "__main__":
     #run the methods
