@@ -1,0 +1,66 @@
+########################################
+# Program: needle
+# Rundate: Mon 13 Nov 2017 10:22:52
+# Commandline: needle
+#    [-asequence] related.fasta
+#    [-bsequence] ref.fasta
+#    -gapopen 10
+#    -gapextend 0.5
+#    -outfile ianko
+# Align_format: srspair
+# Report_file: ianko
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: GPA1_PEA
+# 2: GPA1_ARATH
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 384
+# Identity:     329/384 (85.7%)
+# Similarity:   357/384 (93.0%)
+# Gaps:           1/384 ( 0.3%)
+# Score: 1726.0
+# 
+#
+#=======================================
+
+GPA1_PEA           1 MGLLCSKSNRYNDAKAEENAQTAEIERRIELETKAEKHIRKLLLLGAGES     50
+                     ||||||:| |::....:||.|.||||||||.|.|||||||||||||||||
+GPA1_ARATH         1 MGLLCSRS-RHHTEDTDENTQAAEIERRIEQEAKAEKHIRKLLLLGAGES     49
+
+GPA1_PEA          51 GKSTIFKQIKLLFQTGFDEAELKSYLPVVHANVYQTIKLLHDGSKEFAQN    100
+                     |||||||||||||||||||.|||||:||:||||||||||||||:||||||
+GPA1_ARATH        50 GKSTIFKQIKLLFQTGFDEGELKSYVPVIHANVYQTIKLLHDGTKEFAQN     99
+
+GPA1_PEA         101 DVDFSKYVISTENKDIGEKLSEIGGRLDYPRLTKELAQEIESIWKDAAIQ    150
+                     :.|.:||::|:|:..|||||||||||||||||||::|:.||::|||.|||
+GPA1_ARATH       100 ETDSAKYMLSSESIAIGEKLSEIGGRLDYPRLTKDIAEGIETLWKDPAIQ    149
+
+GPA1_PEA         151 ETYARGNELQVPDCTHYFMENLQRLSDANYVPTKEDVLLARVRTTGVVEI    200
+                     ||.||||||||||||.|.||||:||||.||:|||||||.|||||||||||
+GPA1_ARATH       150 ETCARGNELQVPDCTKYLMENLKRLSDINYIPTKEDVLYARVRTTGVVEI    199
+
+GPA1_PEA         201 QFSPVGENKKSGEVYRLFDVGGQRNERRKWIHLFEGVSAVIFCVAISEYD    250
+                     |||||||||||||||||||||||||||||||||||||:|||||.||||||
+GPA1_ARATH       200 QFSPVGENKKSGEVYRLFDVGGQRNERRKWIHLFEGVTAVIFCAAISEYD    249
+
+GPA1_PEA         251 QTLFEDENKNRMMETKELFEWVLKQQCFEKTSFMLFLNKFDIFEKKILDV    300
+                     |||||||.|||||||||||:|||||.||||||||||||||||||||:|||
+GPA1_ARATH       250 QTLFEDEQKNRMMETKELFDWVLKQPCFEKTSFMLFLNKFDIFEKKVLDV    299
+
+GPA1_PEA         301 PLNVCEWFKDYQPVSTGKQEIEHAYEFVKKKFEESYFQSTAPDSVDRVFK    350
+                     ||||||||:||||||:||||||||||||||||||.|:|:||||.||||||
+GPA1_ARATH       300 PLNVCEWFRDYQPVSSGKQEIEHAYEFVKKKFEELYYQNTAPDRVDRVFK    349
+
+GPA1_PEA         351 IYRTTALDQKVVKKTFKLVDETLRRRNLFEAGLL    384
+                     ||||||||||:|||||||||||||||||.|||||
+GPA1_ARATH       350 IYRTTALDQKLVKKTFKLVDETLRRRNLLEAGLL    383
+
+
+#---------------------------------------
+#---------------------------------------
