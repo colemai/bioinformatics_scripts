@@ -63,5 +63,5 @@ if __name__ == "__main__":
 	reference_sequence = prep_seqs(argv[1])
 	non_reference_sequences = prep_seqs(argv[2])
 	
-	pairwise_align(reference_sequence, non_reference_sequences)
+	call_needle(argv[1], argv[2])
 
