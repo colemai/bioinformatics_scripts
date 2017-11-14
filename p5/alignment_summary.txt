@@ -1,0 +1,6 @@
+>GPA1_ARATH Guanine nucleotide-binding protein alpha-1 subunit OS=Arabidopsis thaliana GN=GPA1 PE=1 SV=1	383	>GPA1_PEA Guanine nucleotide-binding protein alpha-1 subunit OS=Pisum sativum GN=GPA1 PE=2 SV=1	384	347	None
+>GPA1_ARATH Guanine nucleotide-binding protein alpha-1 subunit OS=Arabidopsis thaliana GN=GPA1 PE=1 SV=1	383	>GPA1_SOYBN Guanine nucleotide-binding protein alpha-1 subunit OS=Glycine max GN=GPA1 PE=2 SV=1	385	354	None
+>GPA1_ARATH Guanine nucleotide-binding protein alpha-1 subunit OS=Arabidopsis thaliana GN=GPA1 PE=1 SV=1	383	>GPA1_LUPLU Guanine nucleotide-binding protein alpha-1 subunit OS=Lupinus luteus GN=GPA1 PE=2 SV=1	384	345	None
+>GPA1_ARATH Guanine nucleotide-binding protein alpha-1 subunit OS=Arabidopsis thaliana GN=GPA1 PE=1 SV=1	383	>GPA1_LOTJA Guanine nucleotide-binding protein alpha-1 subunit OS=Lotus japonicus GN=GPA1 PE=2 SV=1	384	345	None
+>GPA1_ARATH Guanine nucleotide-binding protein alpha-1 subunit OS=Arabidopsis thaliana GN=GPA1 PE=1 SV=1	383	>GPA1_ORYSJ Guanine nucleotide-binding protein alpha-1 subunit OS=Oryza sativa subsp. japonica GN=GPA1 PE=1 SV=2	380	349	None
+>GPA1_ARATH Guanine nucleotide-binding protein alpha-1 subunit OS=Arabidopsis thaliana GN=GPA1 PE=1 SV=1	383	>sp|P26981|GPA1_SOLLC Guanine nucleotide-binding protein alpha-1 subunit OS=Solanum lycopersicum GN=GPA1 PE=2 SV=1	384	346	None

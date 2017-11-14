@@ -9,10 +9,8 @@ Output: Tab delimited
 
 from sys import argv
 import subprocess
-
-#to do: check Sandra's docstrings
-# a bunch of asserting
-# output identity as float of two decimal places
+import os.path
+import sys
 
 def parse_fasta (input_filename):
     #Converts fasta file into a dictionary. Input of fasta file.
@@ -55,8 +53,9 @@ def hamming_distance (seq1, seq2):
 	Output: Hamming distance between those two sequences
 	"""
 	hamming = 0
+	lengths = [len(seq1), len(seq2)]
 
-	for i in range(0, len(seq1)):
+	for i in range(0, min(lengths)):
 		if seq1[i] != seq2[i]:
 			hamming +=1
 		else:
@@ -76,28 +75,57 @@ def identity_with_ref (ref, seq):
 	identity = (identical_positions/alignment_length) * 100
 	print (identity)
 
+def parse_needle_output(needle_file_name):
+	"""
+	Input: The output file of needle (EMBOSS command line tool for pairwise alignment)
+	Output: List of lists, the sub lists containing a string of each line of a given alignment
+	"""
+	if os.path.isfile(needle_file_name):
+		output_file_path = (os.path.join(sys.path[0], needle_file_name))
+		with open(output_file_path, 'r') as needle_file:
+			needle_text = needle_file.readlines()
+			master_needle = []
+			single_alignment = []
+			for line in needle_text:
+				if "Aligned_sequences" in line:
+					master_needle.append(single_alignment)
+					single_alignment = []
+					single_alignment.append(line.strip())
+				else:
+					single_alignment.append(line.strip())
+			master_needle.append(single_alignment)
+			del master_needle[0]
+			return(master_needle[0])
 
-# def pairwise_align(ref_seq, seqs):
-# 	"""
-# 	Input: ref seq which is a single seq dict in a list, seqs which are multiple
-# 	Function: Pairwise aligns each of seqs with ref seq using needle programme
-# 	Output: 
-# 	"""
-# 	for sequence in seqs:
-# 		reference = ref_seq[1]['Sequence']
-# 		current_sequence = sequence['Sequence']
-		
-# 		call_needle(reference, current_sequence)
+def give_tab_delimited_summary(seqs, ref_seq):
+	"""
+	Input: 
+	Output: Returns tab delimited table summarising each alignment (seq1, length, seq2, len, hamm, ident)
+	"""
+
+	ref_seq_name = ref_seq[0]['Label'] + '\t'
+	ref_seq_length = str(ref_seq[0]['Length']) + '\t'
+
+	with open('alignment_summary.txt', 'w') as file_object:
+		for seq in seqs:
+			seq_name = seq['Label'] + '\t'
+			seq_length = str(seq['Length']) + '\t'
+			hamm = str(hamming_distance(ref_seq[0]['Sequence'], seq['Sequence'])) + '\t'
+			ident = str(identity_with_ref(ref_seq[0]['Sequence'], seq['Sequence'])) + '\n'
+			file_object.write(ref_seq_name)
+			file_object.write(ref_seq_length)
+			file_object.write(seq_name)
+			file_object.write(seq_length)
+			file_object.write(hamm)
+			file_object.write(ident)
 
 if __name__ == "__main__":
     #run the methods
 	reference_sequence = prep_seqs(argv[1])
 	non_reference_sequences = prep_seqs(argv[2])
-	# print (non_reference_sequences)
 	
-	# call_needle(argv[1], argv[2])
-	# hamming_distance(reference_sequence[0]['Sequence'], non_reference_sequences[2]['Sequence'])
-	identity_with_ref(reference_sequence[0]['Sequence'], non_reference_sequences[1]['Sequence'])
+	parse_needle_output('out.needle')
+	give_tab_delimited_summary(non_reference_sequences, reference_sequence)
 
 
 
