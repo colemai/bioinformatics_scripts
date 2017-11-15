@@ -13,7 +13,7 @@ import os.path
 import sys
 
 def parse_fasta (input_filename):
-    #Converts fasta file into a dictionary. Input of fasta file.
+    #Converts fasta file into a list of dictionaries. Input of fasta file.
     with open(input_filename, 'r') as file_object:
         file_list = file_object.readlines()
         master_seq_list = []
