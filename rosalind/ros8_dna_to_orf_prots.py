@@ -12,7 +12,8 @@ from sys import argv
 def single_fasta_to_string (input_file):
 	with open(input_file) as fasta_file:
 		lines = fasta_file.readlines()
-		forward_sequence = lines[1]
+		#get the stripped version of every line after the first line joined up
+		forward_sequence = ''.join(list(map(str.strip, lines[1:])))
 	return(forward_sequence)
 
 
@@ -31,8 +32,8 @@ def generate_reverse_complement_dna (forward_sequence):
 		'C':'G'
 	}
 	for nt in reverse_forward_sequence:
-		 reverse_complement += dna_dict.get(nt)
-	return reverse_complement
+		reverse_complement += dna_dict.get(nt)
+	return (reverse_complement)
 
 
 #Step3: Convert to RNA
@@ -154,15 +155,17 @@ def translate_all_ORFs (rf_list):
 		for codon in codons:
 			if codon == "AUG":
 				switch += 1
-				transient_list.insert(switch -1, 'M')
-			elif rna_to_aa_case(codon) == 'Stop':
+				transient_list.insert(switch -1, '')
+			if rna_to_aa_case(codon) == 'Stop':
 				aa_seq_list += transient_list
 				switch = 0
+				transient_list = []
 			elif switch > 0:
 				for i in range(0, len(transient_list)):
 					transient_list[i] += (rna_to_aa_case(codon))
 			else:
 				continue
+		# aa_seq_list += transient_list
 	return (set(aa_seq_list))
 
 #Step6: Run all methods and output
