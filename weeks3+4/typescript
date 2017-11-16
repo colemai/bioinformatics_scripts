@@ -1,0 +1,23 @@
+Script started on do 16 nov 2017 11:51:27 CET
+]0;ian@ian-XPS-13-9365: ~/Desktop/bioinformatics_scripts/weeks3+4ian@ian-XPS-13-9365:~/Desktop/bioinformatics_scripts/weeks3+4$ echo "catdog"
+catdog
+]0;ian@ian-XPS-13-9365: ~/Desktop/bioinformatics_scripts/weeks3+4ian@ian-XPS-13-9365:~/Desktop/bioinformatics_scripts/weeks3+4$ end
+No command 'end' found, did you mean:
+ Command 'bnd' from package 'bnd' (universe)
+ Command 'ent' from package 'ent' (universe)
+ Command 'send' from package 'mailutils-mh' (universe)
+ Command 'send' from package 'nmh' (universe)
+ Command 'eid' from package 'id-utils' (universe)
+ Command 'esd' from package 'pulseaudio-esound-compat' (universe)
+ Command 'snd' from package 'snd-gtk-pulse' (universe)
+ Command 'snd' from package 'snd-gtk-jack' (universe)
+ Command 'snd' from package 'snd-nox' (universe)
+ Command 'env' from package 'coreutils' (main)
+ Command 'ed' from package 'ed' (main)
+ Command 'nd' from package 'nd' (universe)
+ Command 'and' from package 'and' (universe)
+end: command not found
+]0;ian@ian-XPS-13-9365: ~/Desktop/bioinformatics_scripts/weeks3+4ian@ian-XPS-13-9365:~/Desktop/bioinformatics_scripts/weeks3+4$ end[K[K[Kexit
+exit
+
+Script done on do 16 nov 2017 11:52:02 CET
