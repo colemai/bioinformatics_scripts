@@ -7,6 +7,7 @@ Inputs: Two fasta files, first is a reference, second is assembled contigs
 """
 
 from sys import argv
+import subprocess
 
 
 #Step1 Read in both reference and assembly files
@@ -38,6 +39,7 @@ def assembly_size (assembly_dict):
     return int(size/2)
 
 #Step3 Calculate N50 size
+#Step4 Calculate N50 index
 def n50_and_n50_index (assembly_dict, assembly_size):
     """
     Input: Dict of assembly {Label: Sequence} each as str, Assembly size as int
@@ -62,9 +64,33 @@ def n50_and_n50_index (assembly_dict, assembly_size):
     #Return the last item added to contigs_in_50 (i.e the smallest length contained) and length 
     return(contigs_in_50[-1], len(contigs_in_50))
 
-#Step4 Calculate N50 index
-
 #Step5 Calcualte compare the two assemblies using lastz
+#create and call the lastz command on the terminal TODO checks this work
+# cmd = 'lastz --format=general --output={}  {} {}'.format('outlastz.txt', argv[1], argv[2])
+# subprocess.check_call(cmd, shell=True)
+#TODO CHECK WHETHER OUTPUT FILE EXISTS and if so don't run code to create it
+
+def intake_alignment_coordinates (input_filename):
+    """
+    Input: Lastz output file (general format)
+    Output: Alignment coordinates in list of tuples [(start_of_alignment, end_of_alignment)]
+    """
+    list_coordinates = []
+    with open(input_filename, 'r') as file_object:
+        file_list = file_object.readlines()
+        for line in file_list[1:]:
+            list_coordinates.append((line.split()[4], line.split()[5]))
+    return (list_coordinates)
+        #Get a list of tuples of the sections of the alignments DONE
+        #ensure that they align as expected i.e 0 index
+        #replace each alignment char with '-'
+
+def replace_aligned_sections (reference_sequence, coordinates):
+    """
+    Input: Sequence of reference as str, Coordinates in list of tuples
+    Output: String with - replacing each char in an alignment
+    """
+
 
 #Step6 Find the regions from the reference genome that are not covered by the Velvet assembly
 
@@ -77,4 +103,9 @@ if __name__ == "__main__":
     size_of_assembly = assembly_size(assembled_contigs)
     n50_score = n50_and_n50_index(assembled_contigs, size_of_assembly)[0]
     n50_index = n50_and_n50_index(assembled_contigs, size_of_assembly)[1]
-    print(n50_score)
+    alignment_coordinates = intake_alignment_output('outlastz.txt')
+
+    # print(n50_score)
+
+
+#TODO get the n50 scores for the refernce genome as well for some reason
