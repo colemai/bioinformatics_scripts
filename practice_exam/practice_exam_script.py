@@ -104,13 +104,9 @@ def replace_aligned_sections (reference_sequence, coordinates):
         align_length = align_end - align_begin
         reference_sequence = reference_sequence[:align_begin] + (align_length * '!') + reference_sequence[align_end:]
     unaligned_segments = re.finditer('[CATG]+', reference_sequence)
+    uncovered_bases = 0
     for segment in unaligned_segments:
         print (segment.start(), ':', segment.end(), segment.group(0))
-    # alignments_list = re.compile('[!]+').split(reference_sequence)
-    # print(alignments_by_size[0:3])
-    # #TODO take last alignment starting point and add length of alignment
-    # print(alignments_list[0:3])
-
 
 #Step6 Find the regions from the reference genome that are not covered by the Velvet assembly
 
