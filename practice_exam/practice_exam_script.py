@@ -8,6 +8,7 @@ Inputs: Two fasta files, first is a reference, second is assembled contigs
 
 from sys import argv
 import subprocess
+import re
 
 
 #Step1 Read in both reference and assembly files
@@ -79,7 +80,7 @@ def intake_alignment_coordinates (input_filename):
     with open(input_filename, 'r') as file_object:
         file_list = file_object.readlines()
         for line in file_list[1:]:
-            list_coordinates.append((line.split()[4], line.split()[5]))
+            list_coordinates.append((int(line.split()[4]), int(line.split()[5])))
     return (list_coordinates)
         #Get a list of tuples of the sections of the alignments DONE
         #ensure that they align as expected i.e 0 index
@@ -90,6 +91,25 @@ def replace_aligned_sections (reference_sequence, coordinates):
     Input: Sequence of reference as str, Coordinates in list of tuples
     Output: String with - replacing each char in an alignment
     """
+    alignments_length_tuples = []
+    # for key, value in coordinates.items():
+    #     alignments_length_tuples.append((key, len(value)))
+    alignments_by_size = sorted(coordinates, key=lambda k: k[0])
+    # print(alignments_by_size[1][0])
+    # print(alignments_by_size[1][0], alignments_by_size[1][1])
+    # print(reference_sequence[alignments_by_size[1][0]:alignments_by_size[1][1]])
+    for coord in alignments_by_size:
+        align_begin = coord[0]
+        align_end = coord[1]
+        align_length = align_end - align_begin
+        reference_sequence = reference_sequence[:align_begin] + (align_length * '!') + reference_sequence[align_end:]
+    unaligned_segments = re.finditer('[CATG]+', reference_sequence)
+    for segment in unaligned_segments:
+        print (segment.start(), ':', segment.end(), segment.group(0))
+    # alignments_list = re.compile('[!]+').split(reference_sequence)
+    # print(alignments_by_size[0:3])
+    # #TODO take last alignment starting point and add length of alignment
+    # print(alignments_list[0:3])
 
 
 #Step6 Find the regions from the reference genome that are not covered by the Velvet assembly
@@ -103,7 +123,9 @@ if __name__ == "__main__":
     size_of_assembly = assembly_size(assembled_contigs)
     n50_score = n50_and_n50_index(assembled_contigs, size_of_assembly)[0]
     n50_index = n50_and_n50_index(assembled_contigs, size_of_assembly)[1]
-    alignment_coordinates = intake_alignment_output('outlastz.txt')
+    alignment_coordinates = intake_alignment_coordinates('outlastz.txt')
+    for key,val in reference.items():
+        unaligned_segments = replace_aligned_sections(val, alignment_coordinates)
 
     # print(n50_score)
 
