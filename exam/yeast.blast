@@ -1,0 +1,865 @@
+# BLASTP 2.6.0+
+# Query: Gene g1
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL076W	100.000	247	0	0	1	247	1	247	0.0	513
+# BLASTP 2.6.0+
+# Query: Gene g2
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL074W	100.000	308	0	0	1	308	1	308	0.0	641
+# BLASTP 2.6.0+
+# Query: Gene g3
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL073C	100.000	615	0	0	1	615	1	615	0.0	1265
+# BLASTP 2.6.0+
+# Query: Gene g4
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YKR105C	93.643	582	6	1	1	551	1	582	0.0	1086
+# BLASTP 2.6.0+
+# Query: Gene g5
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR039C	100.000	210	0	0	1	210	1	210	9.58e-154	422
+# BLASTP 2.6.0+
+# Query: Gene g6
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR040W	100.000	175	0	0	1	175	1	175	4.76e-132	365
+# BLASTP 2.6.0+
+# Query: Gene g7
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL064C	100.000	360	0	0	1	360	1	360	0.0	744
+# BLASTP 2.6.0+
+# Query: Gene g8
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL063W	100.000	423	0	0	1	423	1	423	0.0	866
+# BLASTP 2.6.0+
+# Query: Gene g9
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL061C	100.000	1096	0	0	1	1096	1	1096	0.0	2220
+# BLASTP 2.6.0+
+# Query: Gene g10
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL059C	100.000	316	0	0	1	316	1	316	0.0	650
+# BLASTP 2.6.0+
+# Query: Gene g11
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL058W-A	100.000	113	0	0	1	113	1	113	9.66e-77	220
+# BLASTP 2.6.0+
+# Query: Gene g12
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL057C-A	100.000	97	0	0	1	97	1	97	1.36e-67	195
+# BLASTP 2.6.0+
+# Query: Gene g13
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL057W	100.000	686	0	0	1	686	27	712	0.0	1416
+# BLASTP 2.6.0+
+# Query: Gene g14
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL055W	100.000	335	0	0	1	335	1	335	0.0	701
+# BLASTP 2.6.0+
+# Query: Gene g15
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL054W	100.000	841	0	0	1	841	1	841	0.0	1723
+# BLASTP 2.6.0+
+# Query: Gene g16
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL052C	100.000	416	0	0	1	416	1	416	0.0	861
+# BLASTP 2.6.0+
+# Query: Gene g17
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL051W	100.000	583	0	0	1	583	1	583	0.0	1208
+# BLASTP 2.6.0+
+# Query: Gene g18
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL050C	100.000	321	0	0	1	321	1	321	0.0	664
+# BLASTP 2.6.0+
+# Query: Gene g19
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL049C	100.000	312	0	0	1	312	1	312	0.0	648
+# BLASTP 2.6.0+
+# Query: Gene g20
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL048W-A	100.000	79	0	0	1	79	1	79	1.62e-48	146
+# BLASTP 2.6.0+
+# Query: Gene g21
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL048W	100.000	463	0	0	1	463	1	463	0.0	937
+# BLASTP 2.6.0+
+# Query: Gene g22
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL047C	100.000	258	0	0	1	258	1	258	0.0	534
+# BLASTP 2.6.0+
+# Query: Gene g23
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL045C	100.000	760	0	0	1	760	1	760	0.0	1560
+# BLASTP 2.6.0+
+# Query: Gene g24
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL044C	100.000	417	0	0	1	417	1	417	0.0	853
+# BLASTP 2.6.0+
+# Query: Gene g25
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL043C	100.000	522	0	0	1	522	1	522	0.0	1069
+# BLASTP 2.6.0+
+# Query: Gene g26
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL040W	100.000	500	0	0	1	500	1	500	0.0	1036
+# BLASTP 2.6.0+
+# Query: Gene g27
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL039W	100.000	745	0	0	1	745	1	745	0.0	1549
+# BLASTP 2.6.0+
+# Query: Gene g28
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL038C	100.000	528	0	0	1	528	1	528	0.0	1064
+# BLASTP 2.6.0+
+# Query: Gene g29
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL037C	100.000	434	0	0	33	466	1	434	0.0	891
+# BLASTP 2.6.0+
+# Query: Gene g30
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL036W	100.000	561	0	0	1	561	6	566	0.0	1178
+# BLASTP 2.6.0+
+# Query: Gene g31
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL035C	100.000	110	0	0	1	110	1	110	2.60e-79	226
+# BLASTP 2.6.0+
+# Query: Gene g32
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL034W	100.000	354	0	0	1	354	1	354	0.0	724
+# BLASTP 2.6.0+
+# Query: Gene g33
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL033C	100.000	168	0	0	1	168	1	168	1.17e-128	355
+# BLASTP 2.6.0+
+# Query: Gene g34
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL032W	100.000	346	0	0	1	346	1	346	0.0	717
+# BLASTP 2.6.0+
+# Query: Gene g35
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL031C	100.000	297	0	0	1	297	1	297	0.0	616
+# BLASTP 2.6.0+
+# Query: Gene g36
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL030C	100.000	799	0	0	1	799	1	799	0.0	1638
+# BLASTP 2.6.0+
+# Query: Gene g37
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL029C	100.000	440	0	0	1	440	1	440	0.0	917
+# BLASTP 2.6.0+
+# Query: Gene g38
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL028W	100.000	405	0	0	1	405	1	405	0.0	748
+# BLASTP 2.6.0+
+# Query: Gene g39
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL027W	100.000	507	0	0	1	507	6	512	0.0	1049
+# BLASTP 2.6.0+
+# Query: Gene g40
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL026C-B	100.000	193	0	0	1	193	1	193	6.87e-144	396
+# BLASTP 2.6.0+
+# Query: Gene g41
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL026C-A	100.000	193	0	0	1	193	1	193	1.70e-146	402
+# BLASTP 2.6.0+
+# Query: Gene g42
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL025C	100.000	633	0	0	1	633	1	633	0.0	1308
+# BLASTP 2.6.0+
+# Query: Gene g43
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL024W	100.000	1037	0	0	1	1037	1	1037	0.0	2106
+# BLASTP 2.6.0+
+# Query: Gene g44
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL019W	98.305	1770	1	1	1	1741	1	1770	0.0	3597
+# BLASTP 2.6.0+
+# Query: Gene g45
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL018W	100.000	364	0	0	1	364	1	364	0.0	735
+# BLASTP 2.6.0+
+# Query: Gene g46
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL017C	100.000	497	0	0	1	497	1	497	0.0	1035
+# BLASTP 2.6.0+
+# Query: Gene g47
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL016C	100.000	380	0	0	1	380	1	380	0.0	786
+# BLASTP 2.6.0+
+# Query: Gene g48
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL014W	100.000	1636	0	0	1	1636	1	1636	0.0	3343
+# BLASTP 2.6.0+
+# Query: Gene g49
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL012C	100.000	113	0	0	1	113	22	134	7.19e-81	231
+# BLASTP 2.6.0+
+# Query: Gene g50
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL011C	100.000	421	0	0	1	421	7	427	0.0	862
+# BLASTP 2.6.0+
+# Query: Gene g51
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL010C	100.000	259	0	0	1	259	1	259	0.0	537
+# BLASTP 2.6.0+
+# Query: Gene g52
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL009C	100.000	309	0	0	1	309	1	309	0.0	636
+# BLASTP 2.6.0+
+# Query: Gene g53
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL008C	100.000	385	0	0	1	385	1	385	0.0	789
+# BLASTP 2.6.0+
+# Query: Gene g54
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL005W	100.000	113	0	0	1	113	144	256	3.82e-82	239
+# BLASTP 2.6.0+
+# Query: Gene g55
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL004W	100.000	492	0	0	1	492	30	521	0.0	1014
+# BLASTP 2.6.0+
+# Query: Gene g56
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL001W	100.000	188	0	0	1	188	1	188	1.39e-141	390
+# BLASTP 2.6.0+
+# Query: Gene g57
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCL001W-A	99.306	144	1	0	1	144	1	144	6.50e-102	291
+# BLASTP 2.6.0+
+# Query: Gene g58
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR002C	100.000	322	0	0	1	322	1	322	0.0	662
+# BLASTP 2.6.0+
+# Query: Gene g59
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR003W	100.000	183	0	0	1	183	1	183	1.02e-137	380
+# BLASTP 2.6.0+
+# Query: Gene g60
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR004C	100.000	247	0	0	1	247	1	247	0.0	503
+# BLASTP 2.6.0+
+# Query: Gene g61
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR005C	100.000	460	0	0	1	460	1	460	0.0	944
+# BLASTP 2.6.0+
+# Query: Gene g62
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR007C	100.000	239	0	0	1	239	1	239	0.0	495
+# BLASTP 2.6.0+
+# Query: Gene g63
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR008W	100.000	600	0	0	1	600	4	603	0.0	1258
+# BLASTP 2.6.0+
+# Query: Gene g64
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR009C	100.000	265	0	0	1	265	1	265	0.0	543
+# BLASTP 2.6.0+
+# Query: Gene g65
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR010C	100.000	283	0	0	1	283	1	283	0.0	576
+# BLASTP 2.6.0+
+# Query: Gene g66
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR011C	100.000	1049	0	0	1	1049	1	1049	0.0	2144
+# BLASTP 2.6.0+
+# Query: Gene g67
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR012W	100.000	416	0	0	1	416	1	416	0.0	835
+# BLASTP 2.6.0+
+# Query: Gene g68
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR014C	100.000	582	0	0	1	582	1	582	0.0	1195
+# BLASTP 2.6.0+
+# Query: Gene g69
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR015C	100.000	317	0	0	1	317	1	317	0.0	653
+# BLASTP 2.6.0+
+# Query: Gene g70
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR016W	100.000	290	0	0	1	290	1	290	0.0	573
+# BLASTP 2.6.0+
+# Query: Gene g71
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR017C	100.000	953	0	0	1	953	1	953	0.0	1963
+# BLASTP 2.6.0+
+# Query: Gene g72
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR018C	100.000	221	0	0	1	221	1	221	7.25e-165	451
+# BLASTP 2.6.0+
+# Query: Gene g73
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR019W	100.000	362	0	0	1	362	2	363	0.0	748
+# BLASTP 2.6.0+
+# Query: Gene g74
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR020C	100.000	215	0	0	1	215	1	215	1.28e-162	445
+# BLASTP 2.6.0+
+# Query: Gene g75
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR020C-A	100.000	88	0	0	1	88	1	88	1.16e-58	172
+# BLASTP 2.6.0+
+# Query: Gene g76
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR021C	100.000	332	0	0	1	332	1	332	0.0	686
+# BLASTP 2.6.0+
+# Query: Gene g77
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR023C	100.000	611	0	0	1	611	1	611	0.0	1269
+# BLASTP 2.6.0+
+# Query: Gene g78
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR024C	100.000	492	0	0	1	492	1	492	0.0	1026
+# BLASTP 2.6.0+
+# Query: Gene g79
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR026C	100.000	742	0	0	1	742	1	742	0.0	1526
+# BLASTP 2.6.0+
+# Query: Gene g80
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR027C	100.000	209	0	0	1	209	1	209	2.67e-157	431
+# BLASTP 2.6.0+
+# Query: Gene g81
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR028C	100.000	511	0	0	1	511	2	512	0.0	1059
+# BLASTP 2.6.0+
+# Query: Gene g82
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR028C-A	100.000	135	0	0	1	135	1	135	1.61e-100	281
+# BLASTP 2.6.0+
+# Query: Gene g83
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR030C	100.000	870	0	0	1	870	1	870	0.0	1779
+# BLASTP 2.6.0+
+# Query: Gene g84
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR031C	100.000	137	0	0	1	137	1	137	5.84e-98	275
+# BLASTP 2.6.0+
+# Query: Gene g85
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR032W	100.000	2167	0	0	1	2167	1	2167	0.0	4439
+# BLASTP 2.6.0+
+# Query: Gene g86
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR033W	100.000	1226	0	0	1	1226	1	1226	0.0	2520
+# BLASTP 2.6.0+
+# Query: Gene g87
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR034W	100.000	347	0	0	1	347	1	347	0.0	712
+# BLASTP 2.6.0+
+# Query: Gene g88
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR035C	100.000	394	0	0	1	394	1	394	0.0	805
+# BLASTP 2.6.0+
+# Query: Gene g89
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR036W	100.000	333	0	0	1	333	1	333	0.0	688
+# BLASTP 2.6.0+
+# Query: Gene g90
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR037C	100.000	923	0	0	1	923	1	923	0.0	1894
+# BLASTP 2.6.0+
+# Query: Gene g91
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR038C	100.000	608	0	0	1	608	35	642	0.0	1251
+# BLASTP 2.6.0+
+# Query: Gene g92
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR039C	100.000	210	0	0	1	210	1	210	9.58e-154	422
+# BLASTP 2.6.0+
+# Query: Gene g93
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR040W	100.000	175	0	0	1	175	1	175	4.76e-132	365
+# BLASTP 2.6.0+
+# Query: Gene g94
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR042C	100.000	1406	0	0	1	1406	2	1407	0.0	2909
+# BLASTP 2.6.0+
+# Query: Gene g95
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR043C	100.000	127	0	0	1	127	1	127	6.21e-94	264
+# BLASTP 2.6.0+
+# Query: Gene g96
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR044C	100.000	357	0	0	1	357	1	357	0.0	744
+# BLASTP 2.6.0+
+# Query: Gene g97
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR045C	100.000	491	0	0	1	491	1	491	0.0	1021
+# BLASTP 2.6.0+
+# Query: Gene g98
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR046C	100.000	169	0	0	1	169	1	169	6.41e-123	341
+# BLASTP 2.6.0+
+# Query: Gene g99
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR047C	100.000	275	0	0	1	275	1	275	0.0	570
+# BLASTP 2.6.0+
+# Query: Gene g100
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR048W	100.000	610	0	0	1	610	1	610	0.0	1271
+# BLASTP 2.6.0+
+# Query: Gene g101
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR051W	100.000	222	0	0	1	222	1	222	2.79e-166	455
+# BLASTP 2.6.0+
+# Query: Gene g102
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR052W	100.000	483	0	0	1	483	1	483	0.0	988
+# BLASTP 2.6.0+
+# Query: Gene g103
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR053W	100.000	514	0	0	1	514	1	514	0.0	1056
+# BLASTP 2.6.0+
+# Query: Gene g104
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR054C	100.000	563	0	0	1	563	1	563	0.0	1155
+# BLASTP 2.6.0+
+# Query: Gene g105
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR057C	100.000	923	0	0	1	923	1	923	0.0	1906
+# BLASTP 2.6.0+
+# Query: Gene g106
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR059C	100.000	258	0	0	1	258	1	258	0.0	536
+# BLASTP 2.6.0+
+# Query: Gene g107
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR060W	100.000	111	0	0	1	111	1	111	1.43e-80	229
+# BLASTP 2.6.0+
+# Query: Gene g108
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR061W	100.000	631	0	0	1	631	1	631	0.0	1302
+# BLASTP 2.6.0+
+# Query: Gene g109
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR065W	100.000	563	0	0	1	563	2	564	0.0	1164
+# BLASTP 2.6.0+
+# Query: Gene g110
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR066W	100.000	487	0	0	1	487	1	487	0.0	1009
+# BLASTP 2.6.0+
+# Query: Gene g111
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR067C	100.000	1065	0	0	1	1065	1	1065	0.0	2112
+# BLASTP 2.6.0+
+# Query: Gene g112
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR068W	100.000	471	0	0	1	471	50	520	0.0	990
+# BLASTP 2.6.0+
+# Query: Gene g113
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR069W	100.000	318	0	0	1	318	1	318	0.0	661
+# BLASTP 2.6.0+
+# Query: Gene g114
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR071C	100.000	146	0	0	1	146	1	146	8.72e-108	301
+# BLASTP 2.6.0+
+# Query: Gene g115
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR072C	100.000	515	0	0	1	515	1	515	0.0	1064
+# BLASTP 2.6.0+
+# Query: Gene g116
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR073C	100.000	1330	0	0	1	1330	2	1331	0.0	2765
+# BLASTP 2.6.0+
+# Query: Gene g117
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR073W-A	100.000	315	0	0	1	315	1	315	0.0	650
+# BLASTP 2.6.0+
+# Query: Gene g118
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR075W-A	100.000	75	0	0	1	75	1	75	5.91e-51	152
+# BLASTP 2.6.0+
+# Query: Gene g119
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR076C	100.000	250	0	0	1	250	1	250	0.0	510
+# BLASTP 2.6.0+
+# Query: Gene g120
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR077C	100.000	796	0	0	1	796	1	796	0.0	1629
+# BLASTP 2.6.0+
+# Query: Gene g121
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR079W	100.000	392	0	0	1	392	51	442	0.0	816
+# BLASTP 2.6.0+
+# Query: Gene g122
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR081W	100.000	1427	0	0	1	1427	1	1427	0.0	2919
+# BLASTP 2.6.0+
+# Query: Gene g123
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR082W	100.000	128	0	0	1	128	1	128	4.28e-93	262
+# BLASTP 2.6.0+
+# Query: Gene g124
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR083W	100.000	127	0	0	1	127	1	127	2.88e-94	265
+# BLASTP 2.6.0+
+# Query: Gene g125
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR084C	100.000	713	0	0	1	713	1	713	0.0	1474
+# BLASTP 2.6.0+
+# Query: Gene g126
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR086W	100.000	190	0	0	1	190	1	190	1.31e-139	385
+# BLASTP 2.6.0+
+# Query: Gene g127
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR087C-A	100.000	153	0	0	1	153	1	153	4.35e-111	310
+# BLASTP 2.6.0+
+# Query: Gene g128
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR088W	100.000	592	0	0	1	592	1	592	0.0	1176
+# BLASTP 2.6.0+
+# Query: Gene g129
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR089W	100.000	1609	0	0	1	1609	1	1609	0.0	3023
+# BLASTP 2.6.0+
+# Query: Gene g130
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR090C	100.000	182	0	0	1	182	1	182	5.82e-135	372
+# BLASTP 2.6.0+
+# Query: Gene g131
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR091W	100.000	702	0	0	1	702	19	720	0.0	1459
+# BLASTP 2.6.0+
+# Query: Gene g132
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR092C	100.000	1018	0	0	30	1047	1	1018	0.0	2101
+# BLASTP 2.6.0+
+# Query: Gene g133
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR093W	100.000	2108	0	0	1	2108	1	2108	0.0	4305
+# BLASTP 2.6.0+
+# Query: Gene g134
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR094W	100.000	391	0	0	1	391	1	391	0.0	815
+# BLASTP 2.6.0+
+# Query: Gene g135
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR095C	100.000	362	0	0	1	362	1	362	0.0	744
+# BLASTP 2.6.0+
+# Query: Gene g136
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR097W	99.180	122	1	0	1	122	1	122	1.51e-87	249
+# BLASTP 2.6.0+
+# Query: Gene g137
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR098C	100.000	518	0	0	1	518	1	518	0.0	1060
+# BLASTP 2.6.0+
+# Query: Gene g138
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR099C	100.000	120	0	0	1	120	36	155	1.25e-85	244
+# BLASTP 2.6.0+
+# Query: Gene g139
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR100C	100.000	316	0	0	230	545	1	316	0.0	649
+# BLASTP 2.6.0+
+# Query: Gene g140
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR102C	100.000	368	0	0	1	368	1	368	0.0	752
+# BLASTP 2.6.0+
+# Query: Gene g141
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR104W	100.000	124	0	0	1	124	1	124	7.40e-88	249
+# BLASTP 2.6.0+
+# Query: Gene g142
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR105W	100.000	361	0	0	1	361	1	361	0.0	739
+# BLASTP 2.6.0+
+# Query: Gene g143
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR106W	100.000	832	0	0	1	832	1	832	0.0	1720
+# BLASTP 2.6.0+
+# Query: Gene g144
+# Database: yeast_proteins.fa
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+Gene	YCR107W	100.000	363	0	0	1	363	1	363	0.0	751
+# BLAST processed 144 queries
