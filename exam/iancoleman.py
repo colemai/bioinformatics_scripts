@@ -60,9 +60,7 @@ def protein_list_to_fasta (protein_list, out_file):
             out.write('>Gene g' + str(gene) + '\n')
             out.write(sequence + '\n')
 
-reference = parse_fasta(argv[1])
-gff = parse_gff(argv[2])
-protein_list_to_fasta(gff, 'predicted_proteins.fasta')
+
 
 
 #Step2 In your script, extract the predicted protein sequences and store them in a fasta
@@ -75,6 +73,21 @@ protein_list_to_fasta(gff, 'predicted_proteins.fasta')
 # Set the output format in blastp to 7 (tabular)
 # Store only the first hit (set number of alignments to 1)
 # Call the blastp output file yeast.blast
+
+def blast (reference, query):
+    """
+    Input: reference fasta, query fasta
+    Output: 
+    """
+    out_file = 'yeast.blast'
+    if os.path.exists(out_file):
+        return out_file
+    cmd_make_db = "makeblast db -in yeast_proteins.fa -input_type 'fasta' -dbtype 'prot'"
+    cmd_blast = "blastp -query predicted_proteins.fasta -db yeast_proteins.fa -outfmt 7 -out \
+    {} -num_alignments 1".format(out_file)
+    subprocess.check_call(cmd_make_db, shell=True)
+    subprocess.check_call(cmd_blast, shell=True)
+
  
 #Step4 Parse the resulting blast output to extract the relevant information
 
@@ -119,4 +132,8 @@ def run_cmd(argv):
      if os.path.exists(out_file):
         return out_file
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
+    reference = parse_fasta(argv[1])
+    gff = parse_gff(argv[2])
+    protein_list_to_fasta(gff, 'predicted_proteins.fasta')
+    blast(1,2)
