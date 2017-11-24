@@ -4,7 +4,6 @@ Author: Ian Coleman
 Student Number: 910616160090
 
 """
-
 from sys import argv
 import subprocess
 import re
@@ -48,6 +47,8 @@ def parse_gff (input_filename):
                 gene_number += 1
         return gene_list
 
+#Step2 In your script, extract the predicted protein sequences and store them in a fasta
+#file (predicted.fasta)
 def protein_list_to_fasta (protein_list, out_file):
     """
     Input: List of tuples [()], string name for output file
@@ -60,13 +61,6 @@ def protein_list_to_fasta (protein_list, out_file):
             out.write('>Gene g' + str(gene) + '\n')
             out.write(sequence + '\n')
 
-
-
-
-#Step2 In your script, extract the predicted protein sequences and store them in a fasta
-#file (predicted.fasta)
-
-
 #Step3 In your python script, run the programs makeblastdb and blastp to compare
 # the predicted proteins (predicted.fasta) as query to the reference proteins
 #(yeast_proteins.fa) as database.
@@ -74,7 +68,7 @@ def protein_list_to_fasta (protein_list, out_file):
 # Store only the first hit (set number of alignments to 1)
 # Call the blastp output file yeast.blast
 
-def blast (reference, query):
+def blast ():
     """
     Input: reference fasta, query fasta
     Output: 
@@ -82,7 +76,7 @@ def blast (reference, query):
     out_file = 'yeast.blast'
     if os.path.exists(out_file):
         return out_file
-    cmd_make_db = "makeblast db -in yeast_proteins.fa -input_type 'fasta' -dbtype 'prot'"
+    cmd_make_db = "makeblastdb -in yeast_proteins.fa -input_type 'fasta' -dbtype 'prot'"
     cmd_blast = "blastp -query predicted_proteins.fasta -db yeast_proteins.fa -outfmt 7 -out \
     {} -num_alignments 1".format(out_file)
     subprocess.check_call(cmd_make_db, shell=True)
@@ -90,6 +84,35 @@ def blast (reference, query):
 
  
 #Step4 Parse the resulting blast output to extract the relevant information
+# relevant = length of aligned part of query, total query length
+# query ID, query length, subject ID of the
+#blast hit, percent identity of the hit (printed with 2 decimals), and the query
+#coverage (printed with 2 decimals). 
+
+def blast_parser (blast_file):
+    """
+    Input: A blast file name in current dir (or with relative path)
+    Output: 
+    """
+    master_blast = {}
+    with open(blast_file) as file_object:
+        file_list = file_object.read().split('# BLASTP 2.6.0+')
+        for line in range(1, len(file_list) -1):
+            this_line = file_list[line].replace('# ', '').strip()
+            this_line = this_line.split('\n')
+            query_id = this_line[0].split(': ')[1].split(' ')[-1]
+            values = this_line[-1].split('\t')
+            query_length = int(values[7]) 
+            query_identity = float(values[2])
+            alignment_length = int(values[3])
+            seq_id = values[1]
+            coverage = ((alignment_length/query_identity) * 100)
+            master_blast[query_id] = {'Query_length': query_length, 'Query_identity':query_identity,\
+            'qcov': "{0:.2f}".format(coverage), 'seqid': seq_id}
+    return master_blast
+
+    # query = {query_id: x, query_length, }
+
 
 #Step5 Write code to calculate the percent query coverage as (the length of the aligned
 #part of the query/ total query length)*100
@@ -136,4 +159,21 @@ if __name__ == "__main__":
     reference = parse_fasta(argv[1])
     gff = parse_gff(argv[2])
     protein_list_to_fasta(gff, 'predicted_proteins.fasta')
-    blast(1,2)
+    blast()
+    blast_results = blast_parser('yeast.blast')
+    print ('qseqid' + '\t' + 'qlength' + '\t' +  'sseqid' + '\t' + 'pident' + \
+            '\t' + 'qcov')
+    for key, value in blast_results.items():
+        print (key + '\t' + str(value['Query_length']) + '\t' + str(value['seqid'])\
+            + '\t' + str(value['Query_identity']) + '\t' + str(value['qcov']))
+
+
+
+    #TODO uncomment blast and either remove all args and params or
+    #make the args be correct names
+    #Change docstrings to pep27 or whatever
+    #Add comments and remove comments
+    #Ensure lines aren't over line limit length as per pep257
+    #Assertions
+    #Optimsie parse_gff
+
