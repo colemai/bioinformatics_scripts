@@ -12,8 +12,8 @@ def parse_fasta (input_filename):
         fasta_dict = {}
         for i in range(0, len(file_list)):
             if file_list[i].startswith('>'):
-                label_index = file_list[i].strip()
-                fasta_dict[file_list[i].strip()] = ''
+                label_index = file_list[i].strip()[1:]
+                fasta_dict[label_index] = ''
             else: 
                 fasta_dict[label_index] += file_list[i].strip()
         return fasta_dict
@@ -88,6 +88,37 @@ def rna_to_aa_case (rna_codon):
         'GGA': 'G', 'UGG': 'W',  'CGG': 'R', 'AGG': 'R',
         'GGG': 'G'
     }.get(rna_codon, '')
+
+def aa_to_codons (aa):
+    """
+    Input: an amino acid single-char symble
+    Output: a list of RNA codons that may have coded that AA
+    NOTE: Stop codon represented by *
+    """
+    #TODO make input uppercase
+    return {
+        'E': ['GAG', 'GAA'], 
+        'V': ['GUG', 'GUC', 'GUA', 'GUU'], 
+        'H': ['CAC', 'CAU'], 
+        'D': ['GAU', 'GAC'], 
+        'G': ['GGU', 'GGC', 'GGG', 'GGA'], 
+        'S': ['UCU', 'UCA', 'UCG', 'AGU', 'UCC', 'AGC'], 
+        'I': ['AUA', 'AUU', 'AUC'], 
+        'L': ['CUA', 'UUG', 'CUC', 'CUU', 'CUG', 'UUA'], 
+        'C': ['UGC', 'UGU'], 
+        'M': ['AUG'], 
+        'N': ['AAC', 'AAU'], 
+        'A': ['GCC', 'GCG', 'GCA', 'GCU'], 
+        'Q': ['CAA', 'CAG'], 
+        'Y': ['UAU', 'UAC'], 
+        'P': ['CCG', 'CCC', 'CCA', 'CCU'], 
+        '*': ['UAA', 'UGA', 'UAG'], 
+        'T': ['ACC', 'ACG', 'ACA', 'ACU'], 
+        'W': ['UGG'], 
+        'K': ['AAA', 'AAG'], 
+        'R': ['CGU', 'CGA', 'CGC', 'CGG', 'AGG', 'AGA'], 
+        'F': ['UUC', 'UUU']
+    }.get(aa, '')
 
 def rna_to_codons(rna_string):
     """
