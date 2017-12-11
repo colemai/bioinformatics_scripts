@@ -25,6 +25,26 @@ def parse_fasta (input_filename):
                 fasta_dict[label_index] += file_list[i].strip()
         return fasta_dict
 
+def removekey(d, key):
+    r = dict(d)
+    del r[key]
+    return r
+
+def longest_common_substring (fasta):
+    """
+    Input: List of strings
+    Output: Longest common substring
+    """
+    common_substrings = []
+    for label,seq in fasta.items():
+        comparison = seq
+        comparators = removekey(fasta,label)
+        for label2,seq2 in comparators.items():
+            for i in range(0, min([len(comparison), len(seq2)])):
+                print (comparison, seq2, seq2[i])
+            
+
+
 if __name__ == "__main__":
 	fasta_dict = parse_fasta(argv[1])
-	print (fasta_dict)
+	longest_common_substring = longest_common_substring(fasta_dict)
