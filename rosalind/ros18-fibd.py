@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
 Author: Ian Coleman
-Input: A Fasta file with multiple DNA seqs of equal length
-Output: Consensus string followed by profile matrix
-Note: Expects uppercase seqs
+Input: A txt file with two integers (end_point and longevity)
+Output: An integer (number of rabbits at end_point)
 
-Challenge description: http://rosalind.info/problems/cons/
+Challenge description: http://rosalind.info/problems/fibd/
 
 """
 
@@ -44,7 +43,7 @@ def rabbit_population_predictor(end_time, longevity):
 		# Update the dictionaries with the values for this month
 		rabbit_census[month_to_calc] = resulting_pop
 		birth_record[month_to_calc] = breeding_pairs
-		
+
 	return(rabbit_census[end_time])
 
 
