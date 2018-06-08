@@ -44,11 +44,13 @@ def longest_common_substr(seqs):
 
 		#Iterate through each index of sequence
 		for i in range(0, len(seq)):
+			
+			# For this index create a substring at least as long as the current lcs
 			next_char = i + len(lcs) 
 			substr = seq[i : next_char + 1]
-			is_common = all(substr in item for item in (copy_seqs))
 
-			#if substring is common to all seqs then expand it with next character in line
+			#if substring is common to all seqs then repeatedly expand it with next character in line
+			is_common = all(substr in item for item in (copy_seqs))
 			while is_common and len(seq) > next_char +1:
 				next_char += 1
 				substr += seq[next_char]
