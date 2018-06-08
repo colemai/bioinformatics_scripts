@@ -29,6 +29,23 @@ def single_fasta_to_string (input_file):
         forward_sequence = ''.join(list(map(str.strip, lines[1:])))
     return(forward_sequence)
 
+def intake_data(file_path):
+"""
+Input: Path to fasta file with multiple DNA seqs of equal length
+Output: List of seqs
+"""
+with open(file_path, 'r') as file_object:
+    lines_list = file_object.readlines()
+    seq_list = []
+    current_seq = ''
+    for line in lines_list:
+        if line.startswith('>'):
+            seq_list.append('')
+            current_seq = ''
+        else:
+            seq_list[-1] += line.strip()
+    return seq_list
+
 def generate_reverse_complement_dna (forward_sequence):
     """
     Input: Dna sequence as string
