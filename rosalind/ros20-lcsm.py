@@ -37,17 +37,16 @@ def longest_common_substr(seqs):
 	lcs = ''
 
 	#iterate through each sequence (except the last sequence as I believe it can't have anything new)
-	for seq in seqs[:-1]:
+	for seq in seqs:
 		#copy seqs (by value, not ref) to safely remove the current seq --> making a comparison list
 		copy_seqs = seqs[:]
 		copy_seqs.remove(seq)
 
 		#Iterate through each index of sequence
 		for i in range(0, len(seq)):
-			substr = seq[i]
+			next_char = i + len(lcs) 
+			substr = seq[i : next_char + 1]
 			is_common = all(substr in item for item in (copy_seqs))
-			
-			next_char = i
 
 			#if substring is common to all seqs then expand it with next character in line
 			while is_common and len(seq) > next_char +1:
@@ -58,14 +57,12 @@ def longest_common_substr(seqs):
 			# When substring can no longer be expanded, store it if it's the longest common substring so far
 			if is_common and len(substr) > len(lcs): 
 				lcs = substr
-	return lcs
+			elif len(substr) -1 > len(lcs) and not is_common:
+				lcs = (substr[:-1])				
+		return lcs
 
 
 if __name__ == "__main__":
 	seqs = intake_data(argv[1])
-	print(seqs)
-	# lcs = longest_common_substr(seqs)
-	# print(lcs)
-	
-	
-#ACATAAG
+	lcs = longest_common_substr(seqs)
+	print(lcs)
