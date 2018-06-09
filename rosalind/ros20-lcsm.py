@@ -36,7 +36,7 @@ def longest_common_substr(seqs):
 	"""
 	lcs = ''
 
-	#iterate through each sequence (except the last sequence as I believe it can't have anything new)
+	#iterate through each sequence (actually I end up returning after first seq)
 	for seq in seqs:
 		#copy seqs (by value, not ref) to safely remove the current seq --> making a comparison list
 		copy_seqs = seqs[:]

@@ -46,6 +46,17 @@ with open(file_path, 'r') as file_object:
             seq_list[-1] += line.strip()
     return seq_list
 
+def get_input_ints(txt_path):
+    """
+    Input: path to txt file with multiple ints
+    Output: np array of ints
+    """
+    with open(txt_path, 'r') as txt:
+        line = txt.read()
+        line = np.asarray(line.split(' ')) # convert input to numpy array
+        line = line.astype(np.int) # convert from str to ints
+    return line
+
 def generate_reverse_complement_dna (forward_sequence):
     """
     Input: Dna sequence as string
