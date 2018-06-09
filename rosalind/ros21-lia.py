@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+!!! INCOMPLETE !!!
 Author: Ian Coleman
 Input: Two integers k (generation) and N (number of Aa Bb genotypes to check for in k)
 Output: A Float --> probability of N Aa Bb genotypes in generation k
