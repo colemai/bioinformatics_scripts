@@ -47,6 +47,16 @@ def intake_data(file_path):
                 seq_list[-1] += line.strip()
         return seq_list
 
+def import_string(file_path):
+    """
+    Input: Path to text file with single string
+    Output: Single string
+    """
+    with open(file_path) as file_object:
+        lines = file_object.readlines()
+        polypeptide = lines[0].strip()
+    return polypeptide
+
 def get_input_ints(txt_path):
     """
     Input: path to txt file with multiple ints
