@@ -3,7 +3,7 @@
 from sys import argv
 import numpy as np
 
-def parse_fasta (input_filename):
+def fasta_to_dict (input_filename):
     """
     Input: Fasta File
     Output: Dictionary of {label: sequence} both strings
@@ -30,7 +30,7 @@ def single_fasta_to_string (input_file):
         forward_sequence = ''.join(list(map(str.strip, lines[1:])))
     return(forward_sequence)
 
-def intake_data(file_path):
+def fasta_to_list (file_path):
     """
     Input: Path to fasta file with multiple DNA seqs of equal length
     Output: List of seqs
@@ -101,7 +101,18 @@ def seq_to_reading_frames (dna_seq):
     rf_list = [rf_1, rf_2, rf_3]
     return rf_list
 
-def rna_to_aa_case (rna_codon):
+def codons_to_protein (codons):
+    """
+    REQUIRES: rna_to_aa function
+    Input: List of strings (codons)
+    Output: String (protein seq)
+    """
+    protein = ''
+    for codon in codons:
+        protein += rna_to_aa(codon)
+    return protein
+
+def rna_to_aa (rna_codon):
     """
     Input: An RNA codon (three char str)
     Output: the corresponding AA (represented by a single letter)
@@ -109,7 +120,7 @@ def rna_to_aa_case (rna_codon):
     """
     #make uppercase
     return {
-        'AUG': 'R', 'UUU': 'F',  'CUU': 'L', 'AUU': 'I',      
+        'UUU': 'F',  'CUU': 'L', 'AUU': 'I',      
         'GUU': 'V', 'UUC': 'F',  'CUC': 'L', 'AUC': 'I',      
         'GUC': 'V', 'UUA': 'L',  'CUA': 'L', 'AUA': 'I',
         'GUA': 'V', 'UUG': 'L',  'CUG': 'L', 'AUG': 'M',
