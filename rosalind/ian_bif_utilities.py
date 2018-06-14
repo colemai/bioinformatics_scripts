@@ -59,6 +59,7 @@ def import_string(file_path):
 
 def get_input_ints(txt_path):
     """
+    REQUIRES: Numpy
     Input: path to txt file with multiple ints
     Output: np array of ints
     """
