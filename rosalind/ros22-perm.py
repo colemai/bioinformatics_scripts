@@ -7,7 +7,6 @@ Output: The number of permutations of length n and a list of those permutations
 
 from sys import argv
 import pdb
-import numpy as np
 import itertools
 import math
 
