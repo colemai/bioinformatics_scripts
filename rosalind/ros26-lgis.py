@@ -23,7 +23,57 @@ def import_n_perm (file_path):
 		n = int(lines[0])
 	return n, perm
 
+def longest_subseq_incr (perm):
+	"""
+	Input: list (permutation)
+	Output: list --> longest increasing subsequence of that permutation
+	"""
+	scores = [1] * len(perm) 
+	seqs = [ [x] for x in perm ]
+
+	for i in range(0,len(perm)):
+		for j in range(0, len(perm[:i])):
+			if perm[i] > perm[j]:
+				if scores[j]+1 > scores[i]: seqs[i] =  seqs[j] + [perm[i]]
+				scores[i] = max(scores[i], scores[j]+1)		
+	
+	print(max(scores))
+	return max(seqs, key=len)
+
+def longest_subseq_decr (perm):
+	"""
+	Input: list (permutation)
+	Output: list --> longest decreasing subsequence of that permutation
+	"""
+	scores = [1] * len(perm)
+	seqs = [ [x] for x in perm ]
+
+	for i in range(0,len(perm)):
+		for j in range(0, len(perm[:i])):
+			if perm[i] < perm[j]:
+				if scores[j]+1 > scores[i]: seqs[i] =  seqs[j] + [perm[i]]
+				scores[i] = max(scores[i], scores[j]+1)		
+	
+	print(max(scores))
+	return max(seqs, key=len)
+
 
 if __name__ == "__main__":
 	n, perm = import_n_perm(argv[1])
-	print(n, perm)
+	print('n is: ', n)
+
+	longest_incr = longest_subseq_incr(perm)
+	longest_decr = longest_subseq_decr(perm)
+
+	# Dumb print formatting
+	stringer = ''
+	for i in longest_incr:
+		stringer += str(i)
+		stringer += ' '
+	print(stringer)
+
+	stringer = ''
+	for i in longest_decr:
+		stringer += str(i)
+		stringer += ' '
+	print(stringer)
