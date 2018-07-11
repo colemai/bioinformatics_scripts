@@ -3,7 +3,7 @@
 Author: Ian Coleman
 Purpose: Find partial permutations as per http://rosalind.info/problems/pper/
 Input: Path to txt file, two ints on one line separated by a space
-Output: Int (number of permutations of k out of n elements)
+Output: Int (number of permutations of k out of n elements, modulo 1 million)
 """
 
 from sys import argv
@@ -23,9 +23,11 @@ def get_ints_from_file (file_path):
 
  
 def factorial (n):
+	""" Returns Int (factorial of Int input)"""
     return 1 if (n < 1) else n * factorial(n-1)
 
 def combinations (n, r):
+	"""Returns Int (number of combinations of r out of n ints)"""
 	return factorial(n)/(factorial(r) * factorial(n-r))
 
 
