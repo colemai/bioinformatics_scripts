@@ -11,6 +11,8 @@ from sys import argv
 import pdb
 import numpy as np
 import itertools
+from itertools import chain, combinations
+
 from ian_bif_utilities import get_input_ints
 
 
@@ -30,20 +32,31 @@ def signed_perms (perm):
 	"""
 	signed_perms = []
 
+	# Get all possible combinations of items in this permutation
+	complete_combos = list(chain.from_iterable(combinations(perm, r) for r in range(len(perm)+1)))
 
-	return [1]
-
+	# For each of these combinations assign a negative sign
+	for combo in complete_combos:
+		this_perm = perm[:]
+		for i in combo:
+			this_perm[i-1] *= -1
+		signed_perms.append(this_perm) # add this sign-perm to the output
+	return(signed_perms)
 
 
 
 if __name__ == "__main__":
 	n = get_input_ints(argv[1])[0] #get first and only element from input list
-	print(n)
 
-	perms = permutations(n)
-	print(perms)
+	perms = permutations(n) # get all permutations (not signed ones)
+	perms = [list(elem) for elem in perms] #Turn perms into lists from tuples
 
+	# Get all signed perms for each perm
 	master_list = []
 	for perm in perms:
 		master_list += signed_perms(perm)
-	print(master_list)
+
+	# Printing bit
+	print(len(master_list))
+	for j in master_list:
+		print(*j)
