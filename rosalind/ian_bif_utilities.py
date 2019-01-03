@@ -221,6 +221,17 @@ def print_list_as_elements(lister):
             seq += ' '
         print(seq)
 
+def get_kmers (k, seq):
+    """
+    Get all kmers of length k from a string
+    Input: INT k, STRING seq
+    Output: LIST of kmers
+    """
+    kmers = []
+    for i in range(0, len(seq) - (k-1)):
+        kmers.append(seq[i:i+4])
+    return kmers
+
 
 def peptide_weight (peptide_letter):
     """
