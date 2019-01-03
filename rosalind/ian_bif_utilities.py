@@ -221,7 +221,18 @@ def print_list_as_elements(lister):
             seq += ' '
         print(seq)
 
-def get_kmers (k, seq):
+def get_kmers (k, alphabet):
+    """
+    Get all kmers of length k from a custom alphabet e.g "ACGT"
+    Input: INT k, STRING alphabet
+    Output: LIST of all possible kmers in alphabetical order
+    """
+    kmers = list(product(alphabet, repeat=k))
+    kmers = [''.join(x) for x in kmers]
+    kmers = sorted(kmers)
+    return kmers
+
+def get_kmers_v2 (k, seq):
     """
     Get all kmers of length k from a string
     Input: INT k, STRING seq
