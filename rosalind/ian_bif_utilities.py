@@ -18,6 +18,21 @@ def fasta_to_dict (input_filename):
             else: 
                 fasta_dict[label_index] += file_list[i].strip()
         return fasta_dict
+    
+def readFastq(filename):
+    sequences = []
+    qualities = []
+    with open(filename) as fh:
+        while True:
+            fh.readline()  # skip name line
+            seq = fh.readline().rstrip()  # read base sequence
+            fh.readline()  # skip placeholder line
+            qual = fh.readline().rstrip() # base quality line
+            if len(seq) == 0:
+                break
+            sequences.append(seq)
+            qualities.append(qual)
+    return sequences, qualities
 
 def single_fasta_to_string (input_file):
     """
@@ -68,6 +83,22 @@ def get_input_ints(txt_path):
         line = np.asarray(line.split(' ')) # convert input to numpy array
         line = line.astype(np.int) # convert from str to ints
     return line
+
+def reverseComplement (s):
+    complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A', 'N': 'N'}
+    t = ''
+    for base in s:
+        t = complement[base] + t
+    return t
+
+def readGenome(filename):
+    genome = ''
+    with open(filename, 'r') as f:
+        for line in f:
+            # ignore header line with genome information
+            if not line[0] == '>':
+                genome += line.rstrip()
+    return genome
 
 def generate_reverse_complement_dna (forward_sequence):
     """
